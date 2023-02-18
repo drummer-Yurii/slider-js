@@ -5,7 +5,12 @@ body {
     justify-content: center;
 }
 
-.container {}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
 
 .top {
     display: flex;
@@ -28,8 +33,25 @@ body {
     overflow: hidden;
 }
 
+.slider {
+    display: flex;
+    transition: all 1s ease;
+}
+
 .image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.bottom {
+    display: flex;
+    gap: 30px;
+} 
+
+.button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
 }
